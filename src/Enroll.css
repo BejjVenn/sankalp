@@ -1,0 +1,62 @@
+.enroll-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .enroll-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .enroll-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .student-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .student-label {
+    width: 100px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .input-box {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-button {
+    margin-top: 30px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90px;
+    /* align-items: center; */
+    margin-left: 200px;
+    
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

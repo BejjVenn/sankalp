@@ -1,0 +1,30 @@
+.project-info-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.project-content p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.project-content a {
+  color: rgb(50, 50, 239);
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.project-content a:hover {
+  transform: scale(1.05);
+  color: darkblue;
+}

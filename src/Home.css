@@ -1,0 +1,254 @@
+General Styles
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0c512;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Full-screen layout */
+.dashboard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.sankalp-title {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Georgia", serif;
+  letter-spacing: 2px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.menu-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.userid {
+  font-size: 12px;
+  color: gray;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+  border-radius: 50%;
+
+}
+
+/* Sidebar */
+.sidebar {
+  position: absolute;
+  top: 64px;
+  left: -200px; /* Initially hidden */
+  width: 200px;
+  background-color: white;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 16px; /* Show the menu when open */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ff6600;
+  transform: scale(1.05);
+}
+
+.menu-item:last-child {
+  color: red;
+}
+
+.menu-item:last-child:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: darkred;
+}
+
+/* Cards Section */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card Design */
+.card {
+  background-color: #fff4c4;
+  border: 3px solid black; /* Black border added */
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  font-size: 50px;
+}
+
+.card-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.card-btn:hover {
+  /* transform: scale(1.05); */
+  background-color: #ffdb4d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: black;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* margin-right: 50px; */
+}
+
+
+.user-info {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-align */
+  text-align: center;
+}
+
+.username,
+.userid {
+  margin: 0.5px 0; /* Reduce spacing between username and userId */
+  line-height: 1.1; /* Reduce line height for tighter spacing */
+  display: block; /* Ensure they are stacked */
+  margin-right: 20px;
+  margin-top: 10px;
+}

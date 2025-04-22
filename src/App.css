@@ -141,3 +141,67 @@ p a:hover {
   gap: 5px;
   font-size: 14px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Center everything */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+/* Style buttons */
+.generate-btn, .scan-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.generate-btn {
+  background-color: #007bff;
+}
+
+.generate-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.scan-btn {
+  background-color: #28a745;
+}
+
+.scan-btn:hover {
+  background-color: #218838;
+}
+
+/* Timer & messages */
+.timer-text {
+  font-size: 18px;
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.no-qr-text, .scan-result {
+  font-size: 18px;
+  color: #ff0000;
+  margin-top: 10px;
+}
